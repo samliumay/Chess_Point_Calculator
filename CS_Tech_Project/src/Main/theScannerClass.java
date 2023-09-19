@@ -5,11 +5,15 @@ import java.io.*;
 import java.util.*;
 import Tahta.*;
 
+//Modifiye edilmis ozel bir scanner classi. Bazi ozel fonskyonlar main classinda cok yer tutmasin diye yazdim.
+
 public class theScannerClass {
+	
+	//Tahtanin lokasyonu ve kendisinin tutuldugu yer
 	private String locationOfFile = "";
 	public String theTotalString = "";
 	
-	
+	//Setter ve getterlar
 	public String getLocationOfFile() {
 		return locationOfFile;
 	}
@@ -26,6 +30,8 @@ public class theScannerClass {
 		this.theTotalString = theTotalString;
 	}
 	
+	//Burada ozellikle girilen inputta bazi duzeltmeler yaparak java file reader'ının dosyayi bulabilecegi bir formata getirdim. 
+	//Sonrasinda da dosyayi okudum ve icidnekileri de 'theTotalString' variable'ina kayit ettim. 
 	public theScannerClass() throws IOException {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the file location:");

@@ -1,6 +1,9 @@
 package Main;
 
 import java.io.IOException;
+
+//Bu class ana class. Baslatma noktasi burasi. 
+
 import Tahta.*;
 
 import java.util.*; 
@@ -13,6 +16,8 @@ public class main {
 		
 		
 		try {
+			
+			//Tum tahtayi almak icin ozel scanner classini kullandim.
 			theScannerClass scan = new theScannerClass();
 			
 			String watned = scan.getTheTotalString();
